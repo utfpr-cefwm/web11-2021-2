@@ -4,14 +4,15 @@
 (Listar alertas) as (listar)
 (Adicionar alerta) as (adicionar)
 
-note top of Usuario : Todos os usuários possuem o mesmo papel.
+note right of Usuario : Todos os usuários possuem o mesmo papel.
 
 Usuario ---> (listar)
 Usuario ---> (adicionar)
 
-note "Todos os alertas possuem:\n- Horário\n- Descrição" as N2
+note "Ao criar um alerta de horário\nrelativo, deve-se configurar:\n- Quantidade de minutos\n- Descrição" as N3
+note "Ao criar um alerta de horário\nabsoluto, deve-se configurar:\n- Horário\n- Descrição" as N2
 
-(listar) .r. N2
-(adicionar) .l. N2
+(adicionar) .. N2
+(adicionar) .. N3
 
 @enduml
