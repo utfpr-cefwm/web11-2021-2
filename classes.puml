@@ -1,0 +1,17 @@
+@startuml "Classes"
+
+left to right direction
+
+note "<b><u>TO DO</u></b>: Hierarquizar tipos de alertas" as N1
+
+class Alerta {
+  - number timerHandler
+  + Date horario
+  + string descricao
+  constructor(desc, hor)
+  + ajustar(hor)
+  + cancelar()
+}
+note left of Alerta : Alerta programado.\n\nPossui uma descrição que é\nexibida com a conclusão do\ntimer.
+
+@enduml
