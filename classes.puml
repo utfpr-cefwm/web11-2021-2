@@ -6,6 +6,8 @@ class NovaClasse {
 }
 
 class Alerta <<abstract>> {
+  constructor(desc, hor)
+  + ajustar(hor)
   - number timerHandler
   + Date horario
   + boolean absoluto
@@ -20,15 +22,9 @@ class AlertaRelativo {
   + string: getTempoRestante()
 }
 
-class AlertaAbsoluto {
-  + ajustar(hor)
-  constructor(desc, hor)
-}
-
 class Teste {
 }
 
 Alerta <|-- AlertaRelativo
-Alerta <|-- AlertaAbsoluto
 
 @enduml
