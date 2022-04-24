@@ -2,9 +2,6 @@
 
 top to bottom direction
 
-class NovaClasse {
-}
-
 class Alerta <<abstract>> {
   constructor(desc, hor)
   + ajustar(horStr)
@@ -22,8 +19,13 @@ class AlertaRelativo {
   + string: getTempoRestante()
 }
 
-class Teste {
+class GitClass {
+  constructor(classNumber)
+  + string getClassName
+  + Date getClassDate
 }
+
+note right of GitClass : Nota teste para classe GitClass.
 
 Alerta <|-- AlertaRelativo
 
