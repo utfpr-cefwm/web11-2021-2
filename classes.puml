@@ -23,6 +23,7 @@ class GitClass {
   constructor(classNumber)
   + string getClassName
   + Date getClassDate
+  + string getTeacherName
 }
 
 note right of GitClass : Nota teste para classe GitClass.
